@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import '@google/model-viewer';
-import KnottyModel from '../../Assets/Models/Knotty.usdz'
-import TestModel from '../../Assets/Models/Test.glb'
+import USDZModel from '../../Assets/Models/sprout-variant1.usdz'
+import GLBModel from '../../Assets/Models/sprout-variant1.glb'
 const MainWrapper = styled.div`
 	width: 100vw;
 	height: 100vh;
@@ -23,9 +23,9 @@ export const ActivateARButton = styled.p`
   right: 5%;
 `;
 const Main = (props) => {
-	const [ src, setSrc ] = useState(TestModel);
-	const [ iosSrc, setIosSrc ] = useState(KnottyModel);
-	const [ title, setTitle ] = useState('Sprouts');
+	const [ src, setSrc ] = useState(GLBModel);
+	const [ iosSrc, setIosSrc ] = useState(USDZModel);
+	const [ title, setTitle ] = useState('Sprouts, Variants');
 
 	return (
 		<MainWrapper>

@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import styled from 'styled-components';
 import Main from '../Components/AR/Main';
 import { Link } from "react-router-dom";
+import Image from '../Assets/Images/sprouts-background.jpg'
+import Layout from '../Components/Layout/Layout'
 
 const HomeWrapper = styled.div`
 	display: flex;
@@ -10,9 +12,25 @@ const HomeWrapper = styled.div`
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
+	/* background-image: url(${Image});
+	background-repeat: no-repeat; */
 `;
+
+
+const ImageEl = styled.img`
+	    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+	object-fit: cover;
+`
+
 const Title = styled.h1`
-	font-size: 3rem
+	font-size: 3rem;
+	text-align: center;
+	
 `
 export const StyledLink = styled(Link)`
 	text-align: center;
@@ -24,10 +42,14 @@ export const StyledLink = styled(Link)`
 
 const Home = () => {
 	return (
+		<Layout>
 		<HomeWrapper>
-			<Title> Sprouts </Title>
+			<ImageEl src={Image} />
+			<Title> Sprouts, Variants </Title>
 			<StyledLink to={"/ar"}> Go To Ar </StyledLink>
 		</HomeWrapper>
+		</Layout>
+
 	);
 };
 

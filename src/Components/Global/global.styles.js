@@ -1,0 +1,124 @@
+import styled, { createGlobalStyle } from "styled-components";
+import SyneMono from '../../Assets/Fonts/SyneMono-Regular.ttf'
+
+export const size = {
+  mobileS: "320px",
+  mobileM: "420px",
+  mobileL: "520px",
+  mobileSL: "568px",
+  mobileXL: "736px",
+  tablet: "768px",
+  tabletL: "1023px",
+  laptop: "1024px",
+  laptopM: "1124px",
+  laptopL: "1400px",
+  desktopS: "1600px",
+  desktopM: "1900px",
+  desktop: "2260px"
+};
+
+export const Colours = {
+  purple: "#a841f4",
+};
+
+export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'SyneMono';
+    src: url(${SyneMono}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+
+html, body {
+  margin: 0;
+  background: ${Colours.grey};
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    font-weight: 100;
+  font-family: 'SyneMono';
+
+    }
+  a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 100 !important;
+  }
+  h1 {
+  margin-bottom: 1.45rem;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+h2 {
+  margin-bottom: 1.45rem;
+  font-size: 1.62671rem;
+  line-height: 1.1;
+}
+h3 {
+  margin-bottom: 1.45rem;
+  font-size: 1.38316rem;
+  line-height: 1.1;
+}
+h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  word-break: break-all; 
+}
+h5 {
+  margin-bottom: 1.45rem;
+  font-size: 0.85028rem;
+  line-height: 1.1;
+}
+h6 {
+  margin-bottom: 1.45rem;
+  font-size: 0.78405rem;
+}
+img {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+p, li, a, span{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  font-size: 1.5rem  !important;
+  line-height: 1.3;
+  font-weight: 100 !important;
+  color: ${Colours.dark_grey};
+
+}
+
+p {
+  line-height: 1.35;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+
+`;
