@@ -13,7 +13,7 @@ const FlexWrapper = styled.div`
 	position: absolute;
 	width: 100%;
     height: 40%;
-    top: 50%;
+    top: 45%;
     justify-content: space-between;
 `;
 
