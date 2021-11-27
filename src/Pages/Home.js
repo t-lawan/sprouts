@@ -2,15 +2,23 @@ import React, { useRef } from 'react';
 import styled from 'styled-components';
 import Main from '../Components/AR/Main';
 import { Link } from 'react-router-dom';
-import Image from '../Assets/Images/sprouts-background.jpg';
+import Image from '../Assets/Images/sprouts-background-new.jpg';
 import Layout from '../Components/Layout/Layout';
 import { size } from '../Components/Global/global.styles';
 
-const HomeWrapper = styled.div`
+const FlexWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	position: absolute;
+	width: 100%;
+    height: 40%;
+    top: 50%;
+    justify-content: space-between;
+`;
+
+const HomeWrapper = styled.div`
+
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -36,7 +44,7 @@ const ImageEl = styled.img`
 
 const Title = styled.h2`
 	text-align: center;
-	margin: auto;
+	/* margin: auto; */
 `;
 export const StyledLink = styled(Link)`
 	text-align: center;
@@ -52,8 +60,10 @@ const Home = () => {
 		<Layout>
 			<HomeWrapper>
 				<ImageEl src={Image} />
-				<Title> Sprouts, Variants </Title>
-				<StyledLink to={'/ar'}> Go To AR </StyledLink>
+				<FlexWrapper>
+					<Title> Sprouts, Variants </Title>
+					<StyledLink to={'/ar'}> Go To AR </StyledLink>
+				</FlexWrapper>
 			</HomeWrapper>
 		</Layout>
 	);
