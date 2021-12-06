@@ -61,7 +61,7 @@ const Home = () => {
 			<HomeWrapper>
 				<ImageEl src={Image} />
 				<FlexWrapper>
-					<Title> Sprouts, Variants </Title>
+					<Title> ilinx </Title>
 					<StyledLink to={'/ar'}> Go To AR </StyledLink>
 				</FlexWrapper>
 			</HomeWrapper>

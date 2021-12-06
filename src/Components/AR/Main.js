@@ -25,7 +25,7 @@ export const ActivateARButton = styled.p`
 const Main = (props) => {
 	const [ src, setSrc ] = useState(GLBModel);
 	const [ iosSrc, setIosSrc ] = useState(USDZModel);
-	const [ title, setTitle ] = useState('Sprouts, Variants');
+	const [ title, setTitle ] = useState('ilinx');
 
 	return (
 		<MainWrapper>

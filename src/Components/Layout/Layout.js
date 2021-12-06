@@ -7,9 +7,9 @@ export const Main = styled.section`
 
 `
 const Layout = props => {
-    let description = "Sprouts Variant";
+    let description = "ilinx";
     let url = "";
-    let title =  "Sprouts Variant";
+    let title =  "ilinx";
   
     return (
       <>
