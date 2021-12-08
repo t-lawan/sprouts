@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import '@google/model-viewer';
-import USDZModel from '../../Assets/Models/sprout-variant1.usdz'
-import GLBModel from '../../Assets/Models/sprout-variant1.glb'
+import USDZModel from '../../Assets/Models/ilinx-xyz-exhibitionusd.usdz'
+import GLBModel from '../../Assets/Models/ilinx-xyz-exhibition.glb'
 const MainWrapper = styled.div`
 	width: 100vw;
 	height: 100vh;
