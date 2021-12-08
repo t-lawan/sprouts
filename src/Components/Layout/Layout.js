@@ -2,13 +2,13 @@ import * as React from "react";
 import styled from "styled-components";
 import { GlobalStyle } from "../Global/global.styles";
 import { Helmet } from "react-helmet";
-
+import SharingImage from '../../Assets/Images/ilinx-sharing.jpg'
 export const Main = styled.section`
 
 `
 const Layout = props => {
     let description = "ilinx";
-    let url = "";
+    let url = "https://ilinx.xyz/";
     let title =  "ilinx";
   
     return (
@@ -35,18 +35,18 @@ const Layout = props => {
               property: `og:description`,
               content: description
             },
-          //   {
-          //     property: `og:image`,
-          //     content: SharingUrl
-          //   },
-            // {
-            //   property: `og:image:width`,
-            //   content: `720`
-            // },
-            // {
-            //   property: `og:image:height`,
-            //   content: `720`
-            // },
+            {
+              property: `og:image`,
+              content: SharingImage
+            },
+            {
+              property: `og:image:width`,
+              content: `889`
+            },
+            {
+              property: `og:image:height`,
+              content: `500`
+            },
             {
               property: `og:type`,
               content: `website`
